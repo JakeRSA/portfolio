@@ -1,0 +1,31 @@
+.project-card-list {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  background: chartreuse;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.img-container:hover {
+  border: 4px solid rgb(187, 245, 255);
+  box-shadow: 0 0 20px 8px rgb(187, 245, 255);
+}
+
+.img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
