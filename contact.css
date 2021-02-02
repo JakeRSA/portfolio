@@ -1,0 +1,46 @@
+.form-row {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.single-label {
+  display: inline-block;
+  width: 8em;
+  text-align: left;
+  vertical-align: top;
+}
+
+input:not([type="radio"]) {
+  width: 20em;
+}
+
+#phone-row {
+  display: none;
+}
+
+#comment {
+  width: 20em;
+  resize: none;
+}
+
+#submit-container {
+  text-align: center;
+}
+
+#submit {
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 0.2em 1em;
+  font-weight: bold;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+.invalid-form-submit:hover {
+  cursor: not-allowed !important;
+}

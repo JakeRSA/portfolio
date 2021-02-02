@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="./style.css" rel="stylesheet" />
+    <link href="./contact.css" rel="stylesheet" />
   </head>
   <body>
     <nav class='navbar'>
       <ul>
         <li><a href='index.html'>home</a></li>
+        <li><a href="projects.html">projects</a></li>
         <li><a href='about.html'>about</a></li>
         <li><a href='contact.html'>contact</a></li>
       </ul>
     </nav>
     <section>
-      <div class='page-wrapper'>
           <h1>contact.</h1>
+          <p>Leave me a message and I'll get back to you</p>
           <form id='contact-form' action='' onsubmit="return false">
             <div class=form-row>
-              <label for='first-name' class="single-label">first name</label>
+              <label for='first-name' class="single-label">first name*</label>
               <input type='text' id='first-name' name='first-name' required='required'>
             </div>
             <div class=form-row>
@@ -34,36 +36,30 @@
               <label for="phone">phone</label>      
             </div>            
             <div class=form-row id='email-row'>
-              <label for='email' class="single-label">email address</label>
+              <label for='email' class="single-label">email address*</label>
               <input type='email' id='email' name='email' required='required'>
             </div>
             <div class=form-row id='phone-row'>
-              <label for='phone' class="single-label">phone</label>
+              <label for='phone' class="single-label">phone*</label>
               <input type='tel' id='phone' name='phone'>
             </div>
             <div class=form-row>
-              <label for='comment' class="single-label">tell me more</label>
+              <label for='comment' class="single-label">tell me more*</label>
               <textarea id='comment' name='comment' rows='8' required='required'></textarea>
             </div>
             <div id="submit-container">
-              <button type='submit' id='submit' disabled='disabled'>
+              <button type='submit' id='submit' class="invalid-form-submit" disabled='disabled'>
                 submit
               </button>
             </div>
           </form>
           </div>
-      </div>
     </section>
     <footer>
-      <ul>
-        <li><a href=index.html>home</a></li>
-        <li><a href=about.html>about</a></li>
-        <li><a href=contact.html>contact</a></li>
-      </ul>
-      <p id='footer-text'></p>
+      <p id='footer-text'>This page was built with HTML, CSS and Javascript</p>
     </footer>
     <script src="https://kit.fontawesome.com/c9c04ab66c.js" crossorigin="anonymous"></script>
-    <script src='portfolio.js'></script>
+    <script src='contact.js'></script>
   </body>
 </html>
 

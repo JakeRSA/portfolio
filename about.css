@@ -1,0 +1,66 @@
+.subsection {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 15px;
+  margin-bottom: 40px;
+  width: 50%;
+  border: 3px;
+}
+
+.subsection button {
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5em 0.2em;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  color: white;
+  background-color: #0f1711;
+}
+
+#about-buttons {
+  display: inline-block;
+}
+
+#about p {
+  margin: 5px;
+  flex-wrap: wrap;
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+
+#about #about-basic {
+  display: inline;
+}
+
+.separator {
+  width: 40%;
+  background-color: rgb(13, 15, 13);
+  border: 1px solid rgb(13, 15, 13);
+  height: 7px;
+}
+
+#cities p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#city-buttons button:hover {
+  cursor: pointer;
+}
+
+#prev {
+  background-color: lightgray;
+}
+
+iframe {
+  background-color: black;
+  padding: 3px;
+  border-radius: 4px;
+}

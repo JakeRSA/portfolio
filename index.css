@@ -1,0 +1,89 @@
+#index-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.shooting-star {
+  background-color: white;
+  position: fixed;
+  border: none;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  top: -5px;
+  left: -5px;
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(247, 247, 218);
+  background-image: linear-gradient(to bottom right, white, rgb(255, 255, 228));
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  margin-bottom: 30px;
+  padding: 50px 20px;
+  z-index: 2;
+}
+
+.card:hover {
+  background-image: none;
+}
+
+#headings {
+  display: inline-block;
+}
+
+.profile-image {
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  width: 180px;
+  filter: grayscale(100%);
+}
+
+.profile-image::selection {
+  color: none;
+  background: none;
+}
+
+#my-name::selection {
+  color: none;
+  background: none;  
+}
+
+#socials-list {
+  margin-top: 10px;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.socials-button {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 3em;
+  filter: invert(0) sepia(1) saturate(1000%) hue-rotate(160deg);
+}
+
+.socials-button:hover {
+  filter: invert(0.4) sepia(1) saturate(2000%) hue-rotate(160deg);
+}
